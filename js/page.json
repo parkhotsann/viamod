@@ -1,0 +1,48 @@
+[
+
+  {
+    "id": 1,
+    "title": "Модель 647",
+    "imgSrc": "css/spring1.jpg"
+  },
+
+  {
+    "id": 2,
+    "title": "Модель 965",
+    "imgSrc": "css/spring2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Модель 56",
+    "imgSrc": "css/spring3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Модель 76",
+    "imgSrc": "css/spring4.jpg"
+  },
+
+  {
+    "id": 5,
+    "title": "Модель 76",
+    "imgSrc": "css/spring5.jpg"
+  },
+
+  {
+    "id": 6,
+    "title": "Модель 76",
+    "imgSrc": "css/spring6.jpg"
+  },
+
+  {
+    "id": 7,
+    "title": "Модель 76",
+    "imgSrc": "css/spring7.jpg"
+  },
+
+  {
+    "id": 8,
+    "title": "Модель 76",
+    "imgSrc": "css/spring8.jpg"
+  }
+]

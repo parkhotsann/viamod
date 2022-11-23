@@ -1,0 +1,174 @@
+body {
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #151313;
+    line-height: 1;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+
+
+/*Container */
+.container {
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.text {
+    color: #411919;
+    text-shadow: 2px 2px 2px rgb(173, 106, 88), 0 0 1em rgb(222, 106, 28);
+    font-size: 125px;
+    font-family: 'Merriweather', serif;
+
+}
+
+/*Intro*/
+
+.intro {
+    text-align: center;
+    width: 100%;
+    background-image: url("img/intro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/*.line{
+    width: 350px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #26100b;
+}*/
+/*buttons*/
+
+.buttons {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background: rgba(131, 84, 49, 0.37);
+    padding: 22px 22px;
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px;
+
+    color: #7e5a5a;
+    text-decoration: none;
+
+}
+.nav_link:hover{
+    color: rgba(73, 51, 34, 0.37);
+    text-decoration: underline;
+}
+
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover
+.dropdown-content {
+    display: block;
+}
+
+.hot {
+    text-align: center;
+    background-size: cover;
+    font-size: 30px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+
+}
+
+img {
+    width: 300px;
+    height: 400px;
+    box-shadow: 12px 20px 81px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+img:hover {
+    opacity: .7;
+}
+
+figure {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    background: #f3e0e0; /* Цвет фона */
+    padding: 10px; /* Поля */
+    margin: 0 50px 0 0; /* Отступ справа */
+    vertical-align: top; /* Выравниваем по верхнему краю */
+    border-radius: 20px;
+
+}
+figcaption {
+    font-size: 18px;
+    text-align: center; /* Выравниваем по центру */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sales {
+    position: relative;
+    margin: 10px;
+}
+
+.break {
+    width: 320px;
+    font-size: 17px;
+    text-align: center;
+}
+.small-text{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
