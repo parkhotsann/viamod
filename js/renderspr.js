@@ -17,12 +17,12 @@ getProducts();
 function render(productsArray) {
     productsArray.forEach(function (item) {
         const productHTML = ` 
-           <div class="sales">
+           <li class="sales">
                 <figure>
                     <a href="page.html"><img src="${item.imgSrc}" alt="Фотография ${item.id}"></a>
                     <figcaption>${item.title}</figcaption>
                 </figure>
-            </div>`;
+            </li>`;
         productsContainer.insertAdjacentHTML('beforeend', productHTML)
     });
 }
