@@ -1,7 +1,8 @@
+@import "./reset.css";
 body {
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #151313;
     line-height: 1;
 }
@@ -19,9 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Container */
 .container {
-    width:100%;
-    max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
 
 }
 .text {
@@ -31,12 +32,19 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 
 }
+.small-text{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
 
 /*Intro*/
 
 .intro {
     text-align: center;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     background-image: url("img/intro.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -45,26 +53,29 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 120px;
 }
 
-/*.line{
-    width: 350px;
-    height: 1px;
-    margin: 0 auto;
-    background-color: #26100b;
-}*/
+
 /*buttons*/
+
 
 .buttons {
     display: inline-block;
     text-align: center;
     width: 100%;
     background: rgba(131, 84, 49, 0.37);
-    padding: 22px 22px;
+    padding: 20px 0;
+    letter-spacing: normal;
 }
 
 .nav {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    flex-wrap: wrap;
+
 }
 
 .nav_link {
@@ -79,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav_link:hover{
     color: rgba(73, 51, 34, 0.37);
     text-decoration: underline;
+
 }
 
 
@@ -91,8 +103,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Выпадающее содержимое (скрыто по умолчанию) */
 .dropdown-content {
     display: none;
+    margin-top: 2px;
+    border-radius: 10px;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: rgba(131, 84, 49, 0.88);
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -103,10 +117,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-radius: 10px;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #835431;
 }
 
 .dropdown:hover
@@ -114,10 +129,23 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-.hot {
+.section {
+    padding: 10px 0;
+}
+
+.title-1 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.2;
     text-align: center;
-    background-size: cover;
-    font-size: 30px;
+}
+
+.small-text{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bolder;
+
 }
 .main {
     display: flex;
@@ -125,6 +153,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 20px;
 
 }
 
@@ -136,6 +166,7 @@ img {
     margin-bottom: 10px;
     display: block;
 }
+
 img:hover {
     opacity: .7;
 }
@@ -144,7 +175,6 @@ figure {
     display: inline-block; /* Выстраиваем по горизонтали */
     background: #f3e0e0; /* Цвет фона */
     padding: 10px; /* Поля */
-    margin: 0 50px 0 0; /* Отступ справа */
     vertical-align: top; /* Выравниваем по верхнему краю */
     border-radius: 20px;
 
@@ -166,9 +196,104 @@ figcaption {
     font-size: 17px;
     text-align: center;
 }
-.small-text{
-    font-size: 17px;
-    text-transform: uppercase;
-    font-weight: bolder;
+
+
+@media(max-width: 814px) {
+    .text {
+        font-size: 110px;
+    }
+    .small-text {
+        font-size: 12px;
+    }
+    .centered{
+        font-size: 30px;
+    }
+    .nav_link{
+        font-size: 12px;
+    }
+    .title-1 {
+        font-size: 31px;
+    }
+    .buttons{
+        font-size: 13px;
+    }
+    img {
+        width: 190px;
+        height: 260px;
+    }
+    figcaption {
+        font-size: 14px;
+    }
+
+
+}
+
+@media(max-width: 650px) {
+
+    .text {
+        font-size: 85px;
+    }
+
+    .title-1 {
+        font-size: 27px;
+    }
+    .dropdown-content{
+        font-size: 12px;
+    }
+
+    figcaption {
+        font-size: 13px;
+    }
+
+}
+
+@media(max-width: 515px) {
+
+    .text {
+        font-size: 70px;
+        margin-bottom: 8px;
+    }
+
+    .small-text {
+        font-size: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: flex-end;
+        row-gap: 8px;
+        font-size: 11px;
+    }
+
+    .buttons {
+        font-size: 11px;
+    }
+
+    .title-1 {
+        font-size: 20px;
+    }
+
+    img {
+        width: 150px;
+        height: 210px;
+    }
+    figcaption {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 350px) {
+
+    .title-1 {
+        font-size: 17px;
+    }
+
+    img {
+        width: 100px;
+        height: 150px;
+    }
+
+
+
 
 }

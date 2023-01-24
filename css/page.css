@@ -1,9 +1,14 @@
+@import "./reset.css";
 body {
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #151313;
     line-height: 1;
+}
+
+body.lock {
+    overflow: hidden;
 }
 
 *,
@@ -19,24 +24,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Container */
 .container {
-    width:100%;
-    max-width: 1200px;
-    margin: auto;
-
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
 }
 .text {
     color: #411919;
     text-shadow: 2px 2px 2px rgb(173, 106, 88), 0 0 1em rgb(222, 106, 28);
     font-size: 125px;
     font-family: 'Merriweather', serif;
-
+}
+.small-text{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 /*Intro*/
 
 .intro {
     text-align: center;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     background-image: url("img/intro.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -45,26 +54,28 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 120px;
 }
 
-/*.line{
-    width: 350px;
-    height: 1px;
-    margin: 0 auto;
-    background-color: #26100b;
-}*/
+
 /*buttons*/
+
 
 .buttons {
     display: inline-block;
     text-align: center;
     width: 100%;
     background: rgba(131, 84, 49, 0.37);
-    padding: 22px 22px;
+    padding: 20px 0;
+    letter-spacing: normal;
 }
 
 .nav {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    flex-wrap: wrap;
 }
 
 .nav_link {
@@ -74,8 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 
     color: #7e5a5a;
     text-decoration: none;
-
 }
+
 .nav_link:hover{
     color: rgba(73, 51, 34, 0.37);
     text-decoration: underline;
@@ -91,8 +102,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Выпадающее содержимое (скрыто по умолчанию) */
 .dropdown-content {
     display: none;
+    margin-top: 2px;
+    border-radius: 10px;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: rgba(131, 84, 49, 0.88);
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -103,10 +116,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-radius: 10px;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #835431;
 }
 
 .dropdown:hover
@@ -114,32 +128,38 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-.small-text{
-    font-size: 17px;
-    text-transform: uppercase;
-    font-weight: bolder;
-
-}
-
 .main {
-    justify-content: center;
-    width: 1500px;
-    display:flex;
-    margin-top:20px;
-    margin-left: 200px;
-    padding-left: 100px;
-    padding-right: 100px;
-
+    margin: 20px;
 }
 
-img {
-    width: 360px;
-    height: 550px;
+.minimized {
+    width: 315px;
+    height: 400px;
     box-shadow: 12px 20px 81px 0px rgba(0,0,0,0.2);
     border-radius: 20px;
+    cursor: pointer;
 }
+
+.btns {
+    font-size: 25px;
+    padding: 0 30px;
+}
+
+.controls {
+    text-align: center;
+    position: relative;
+    display: flex;
+    top: -40px;
+    left: 65px;
+}
+
+.btns:hover {
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+
 .txt {
-    margin-left: 20px;
+    max-width: 850px;
 
 }
 .name {
@@ -156,12 +176,10 @@ img {
     font-size: 25px;
     margin-bottom: 50px;
 }
-
-
 .row {
      padding-right: 20px;
      text-align: left;
-    vertical-align: top;
+     vertical-align: top;
 }
 
 .tbl {
@@ -170,4 +188,100 @@ img {
 .product {
     display: flex;
     margin-bottom: 20px;
+    column-gap: 20px;
+}
+td {
+    font-size: 16px;
+
+}
+
+.hidden {
+    display:none;
+}
+
+
+
+
+
+@media(max-width: 900px) {
+    .text {
+        font-size: 110px;
+    }
+    .small-text {
+        font-size: 12px;
+    }
+    .nav_link{
+        font-size: 12px;
+    }
+    .title-1 {
+        font-size: 31px;
+        margin-bottom: 20px;
+    }
+    .buttons{
+        font-size: 13px;
+    }
+    .td {
+        font-size:12px;
+    }
+   }
+
+@media(max-width: 710px) {
+
+    .text {
+        font-size: 85px;
+    }
+
+    .title-1 {
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+    .dropdown-content{
+        font-size: 12px;
+    }
+    .nav {
+        font-size: 12px;
+    }
+    .buttons{
+        font-size: 12px;
+    }
+    .product {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .text {
+        font-size: 70px;
+        margin-bottom: 8px;
+    }
+    .small-text {
+        font-size: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: flex-end ;
+        row-gap: 8px;
+        font-size: 11px;
+    }
+    .buttons{
+        font-size: 11px;
+    }
+    .title-1 {
+        font-size: 20px;
+    }
+   .minimized{
+        height:300px;
+        width:220px;
+    }
+    .controls {
+        top: -40px;
+        left: 30px;
+    }
+    .product {
+        justify-content: center;
+    }
+
 }
