@@ -8,16 +8,17 @@
     <title>Модель 95</title>
     <link rel="stylesheet" href="css/page.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<div class = "intro">
+<div class = "intro ">
     <div class="container">
         <h1 class="text">Виа-Мод</h1>
         <p class="small-text">Магазин женской одежды</p>
     </div>
-    <div class="line"></div>
 </div>
-<div class="buttons">
+
+<div id="header" class="buttons">
     <nav class="nav">
         <a class="nav_link" href="index.html">Главная</a>
         <div class="dropdown">
@@ -33,19 +34,28 @@
     </nav>
 </div>
 
-
 <div class="main">
-
+    <div class="container">
         <div class ="product" id = "product-container">
-            <div class="photo" >
-            <img src="css/img/model1.jpg">
-        </div>
-            <div class="txt">
-            <p class="name">Бежевый плащ</p>
-            <a class="year" href="winter.html">Осень-зима 2022-2023</a>
-            <p class="price">Стоимость: 250 бел.руб.</p>
+            <div >
+            <div class="slider" id="slider" >
+                <img src="css/img/spring4.jpg" alt="" class="minimized">
+                <img src="css/img/spring5.jpg" alt="" class="minimized">
+                <img src="css/img/spring6.jpg" alt="" class="minimized">
+            </div>
+            <div class="controls">
+                <button id="btnPrev" class="btns">←</button>
+                <button id="btnNext" class="btns">→</button>
+            </div>
+            </div>
 
-            <h2>О товаре</h2>
+
+            <div class="txt">
+                <p class="name">Бежевый плащ</p>
+                <a class="year" href="winter.html">Осень-зима 2022-2023</a>
+                <p class="price">Стоимость: 250 бел.руб.</p>
+
+                <h2>О товаре</h2>
                 <table class="tbl">
                     <tr>
                         <th class="row" scope = "row">Артикул</th>
@@ -74,13 +84,16 @@
                             Во-первых, потому, что памятники истории того времени, о котором я пишу, остались только в переписке и записках людей высшего круга грамотных; даже интересные и умные рассказы, которые мне удалось слышать, слышал я только от людей того же круга.</td>
                     </tr>
                 </table>
+            </div>
 
         </div>
+
     </div>
+
+
+
 </div>
-
-
-<script src="page.html"></script>
+<script src="./js/slider.js"></script>
 
 </body>
 </html>

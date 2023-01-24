@@ -6,53 +6,57 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Магазин моды</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class = "intro">
     <div class="container">
         <h1 class="text">Виа-Мод</h1>
-        <p class="small-text">
-           Магазин женской одежды
-        </p>
+        <p class="small-text">Магазин женской одежды</p>
     </div>
-    <div class="line"></div>
-</div>
-<div class="buttons">
-    <nav class="nav">
-        <a class="nav_link" href="#top">Главная</a>
-        <div class="dropdown">
-        <a class="nav_link" href="#">Коллекция</a>
-            <div class="dropdown-content">
-                <a href="winter.html">Осень-Зима 2022-2023</a>
-                <a href="spring.html">Весна-Лето 2022</a>
-            </div>
-        </div>
-        <a class="nav_link" href="outlet.html">OUTLET</a>
-        <a class="nav_link" href="contacts.html">О нас</a>
-        <a class="nav_link" href="forpartners.html">Партнерам</a>
-    </nav>
 </div>
 
-<div class="hot">
-    <p id="top"> Наши Предложения </p>
-    <div class="block">
-        <div class="main">
+<nav class="buttons">
+    <div class="container">
+        <ul class="nav">
+            <li><a class="nav_link" href="index.html">Главная</a></li>
+            <div class="dropdown">
+            <li><a class="nav_link">Коллекция</a></li>
+            <div class="dropdown-content">
+                <li><a href="winter.html">Осень-Зима 2022-2023</a></li>
+                <li><a href="spring.html">Весна-Лето 2022</a></li>
+            </div>
+            </div>
+            <li><a class="nav_link" href="outlet.html">OUTLET</a></li>
+            <li><a class="nav_link" href="contacts.html">О нас</a></li>
+            <li><a class="nav_link" href="forpartners.html">Партнерам</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="section">
+    <div class="container">
+    <h2 class="title-1"> Наши Предложения </h2>
+    <ul class="projects">
+        <li class="main">
             <img src="css/img/model.jpeg" alt="">
             <div class="centered">
-                <div сlass="vesna">Весна-Лето 2022</div>
+                <a class="leto">Весна-Лето 2022</a>
+                <p сlass="vesna">Модель 645</p>
             </div>
             <a href="spring.html"><button class="btn">Узнать более</button></a>
-        </div>
+        </li>
 
-        <div class="main">
+        <li class="main">
             <img src="css/img/winter5.jpg" alt="">
             <div class="centered">
-                <div сlass="vesna">Осень-Зима 2022-2023</div>
+                <a class="leto">Осень-Зима 2022-2023</a>
+                <p сlass="vesna">Модель 691</p>
             </div>
             <a href="winter.html"><button class="btn">Узнать более</button></a>
-        </div>
+        </li>
+    </ul>
     </div>
 </div>
 
