@@ -282,7 +282,7 @@ figcaption {
     }
 }
 
-@media(max-width: 350px) {
+@media(max-width: 425px) {
 
     .title-1 {
         font-size: 17px;
@@ -290,10 +290,7 @@ figcaption {
 
     img {
         width: 100px;
-        height: 150px;
+        height: 130px;
     }
-
-
-
 
 }
