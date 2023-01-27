@@ -289,8 +289,13 @@ figcaption {
     }
 
     img {
-        width: 100px;
-        height: 130px;
+        width: 115px;
+        height: 165px;
     }
+.main
+{
+    column-gap:10px;
+    row-gap:0;
+}
 
 }
