@@ -94,6 +94,22 @@
 
 </div>
 <script src="./js/slider.js"></script>
+<script>
+    window.onload = async () => {
+        const url = new URL(window.location.href);
 
+        const id = +url.searchParams.get('id');
+        const collection = url.searchParams.get('collection')
+        console.log(+url.searchParams.get('id'));
+
+        const result = await fetch(`./js/${collection}.json`);
+        const products = await result.json();
+        console.log(products);
+        const product = products.find(p => p.id === id); 
+        console.log(product);
+
+        document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(6) > td').textContent = product.title;
+    }
+</script>
 </body>
 </html>

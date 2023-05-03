@@ -19,7 +19,7 @@ function render(productsArray) {
         const productHTML = ` 
            <li class="sales">
                 <figure>
-                    <a href="page.html"><img src="${item.imgSrc}" alt="Фотография ${item.id}"></a>
+                    <a href="page.html?id=${item.id}&collection=spring"><img src="${item.imgSrc}" alt="Фотография ${item.id}"></a>
                     <figcaption>${item.title}</figcaption>
                 </figure>
             </li>`;
