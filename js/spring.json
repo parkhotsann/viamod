@@ -2,47 +2,219 @@
 
   {
     "id": 1,
-    "title": "Модель 647",
-    "imgSrc": "css/img/spring1.jpg"
+    "title": "Модель 422",
+    "imgSrc": "css/img/spring1.jpg",
+    "images": ["css/img/spring3.jpg","css/img/spring2.jpg","css/img/spring1.jpg"],
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "48, 50, 52",
+    "description": ""
   },
 
   {
     "id": 2,
-    "title": "Модель 965",
-    "imgSrc": "css/img/spring2.jpg"
+    "title": "Модель 522",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "Волна",
+    "consist": "",
+    "size": "48, 50, 52",
+    "description": ""
   },
   {
     "id": 3,
-    "title": "Модель 56",
-    "imgSrc": "css/img/spring3.jpg"
+    "title": "Модель 522",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "Сирень",
+    "consist": "",
+    "size": "48, 50, 52",
+    "description": ""
   },
   {
     "id": 4,
-    "title": "Модель 76",
-    "imgSrc": "css/img/spring4.jpg"
+    "title": "Модель 519",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "Синий",
+    "consist": "",
+    "size": "52, 54, 56",
+    "description": ""
   },
 
   {
     "id": 5,
-    "title": "Модель 76",
-    "imgSrc": "css/img/spring5.jpg"
+    "title": "Модель 521",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "Черный",
+    "consist": "",
+    "size": "48, 50, 52",
+    "description": ""
   },
 
   {
     "id": 6,
-    "title": "Модель 76",
-    "imgSrc": "css/img/spring6.jpg"
+    "title": "Модель 523",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "48, 50, 52",
+    "description": ""
   },
 
   {
     "id": 7,
-    "title": "Модель 76",
-    "imgSrc": "css/img/spring7.jpg"
+    "title": "Модель 525",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "54, 56, 58",
+    "description": ""
   },
 
   {
     "id": 8,
-    "title": "Модель 76",
-    "imgSrc": "css/img/spring8.jpg"
+    "title": "Модель 529",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "50, 52, 54",
+    "description": ""
+  },
+
+  {
+    "id": 9,
+    "title": "Модель 530",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "52, 54, 56",
+    "description": ""
+  },
+
+  {
+    "id": 10,
+    "title": "Модель 531",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "52, 54, 56",
+    "description": ""
+  },
+
+  {
+    "id": 11,
+    "title": "Модель 532",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "50, 52, 54",
+    "description": ""
+  },
+
+  {
+    "id": 12,
+    "title": "Модель 533",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "50, 52, 54",
+    "description": ""
+  },
+
+  {
+    "id": 13,
+    "title": "Модель 534",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "50, 52, 54",
+    "description": ""
+  },
+
+  {
+    "id": 14,
+    "title": "Модель 535",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "48, 50, 52",
+    "description": ""
+  },
+
+  {
+    "id": 15,
+    "title": "Модель 537",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "50, 52, 54",
+    "description": ""
+  },
+
+  {
+    "id": 16,
+    "title": "Модель 538",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "50, 52, 54",
+    "description": ""
+  },
+
+  {
+    "id": 17,
+    "title": "Модель 539",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "50, 52, 54",
+    "description": ""
+  },
+
+  {
+    "id": 18,
+    "title": "Модель 540",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "Синий",
+    "consist": "",
+    "size": "48, 50, 52, 54, 56, 58",
+    "description": ""
+  },
+
+  {
+    "id": 19,
+    "title": "Модель 540",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "Бежевый",
+    "consist": "",
+    "size": "48, 50, 52, 54, 56, 58",
+    "description": ""
+  },
+  {
+    "id": 20,
+    "title": "Модель 540",
+    "imgSrc": "css/img/spring2.jpg",
+    "article": "",
+    "color": "",
+    "consist": "",
+    "size": "54, 56, 58",
+    "description": ""
   }
 ]

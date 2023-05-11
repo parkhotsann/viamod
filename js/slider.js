@@ -27,7 +27,8 @@ btnPrev.onclick = function(){
 }
 
 function showNextSlide(direction) {
-
+    const slider = document.querySelector('#slider');
+    const sliderItems = Array.from(slider.children);
     //скрываем текущий слайд
     const currentSlide = slider.querySelector('[data-active]')
     const currentSlideIndex = +currentSlide.dataset.index

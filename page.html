@@ -8,7 +8,6 @@
     <title>Модель 95</title>
     <link rel="stylesheet" href="css/page.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
-
 </head>
 <body>
 <div class = "intro ">
@@ -24,8 +23,8 @@
         <div class="dropdown">
             <a href="#" class="nav_link" >Коллекция</a>
             <div class="dropdown-content">
-                <a href="winter.html">Осень-Зима 2022-2023</a>
-                <a href="spring.html">Весна-Лето 2022</a>
+                <!-- <a href="winter.html">Осень-Зима 2022-2023</a> -->
+                <a href="spring.html">Весна-Лето 2023</a>
             </div>
         </div>
         <a class="nav_link" href="outlet.html">OUTLET</a>
@@ -37,22 +36,20 @@
 <div class="main">
     <div class="container">
         <div class ="product" id = "product-container">
-            <div >
-            <div class="slider" id="slider" >
-                <img src="css/img/spring4.jpg" alt="" class="minimized">
-                <img src="css/img/spring5.jpg" alt="" class="minimized">
-                <img src="css/img/spring6.jpg" alt="" class="minimized">
-            </div>
-            <div class="controls">
-                <button id="btnPrev" class="btns">←</button>
-                <button id="btnNext" class="btns">→</button>
-            </div>
+            <div>
+                <div class="slider" id="slider" >
+                    <!-- related to product images here -->
+                </div>
+                <div class="controls">
+                    <button id="btnPrev" class="btns">←</button>
+                    <button id="btnNext" class="btns">→</button>
+                </div>
             </div>
 
 
             <div class="txt">
                 <p class="name">Бежевый плащ</p>
-                <a class="year" href="winter.html">Осень-зима 2022-2023</a>
+                <!-- <a class="year" href="winter.html">Осень-зима 2022-2023</a> -->
                 <p class="price">Стоимость: 250 бел.руб.</p>
 
                 <h2>О товаре</h2>
@@ -62,7 +59,7 @@
                         <td>2569841</td>
                     </tr>
                     <tr>
-                        <<th class="row" scope = "row">Цвет</th>
+                        <th class="row" scope = "row">Цвет</th>
                         <td>Бежевый, черный</td>
                     </tr>
                     <tr>
@@ -73,10 +70,10 @@
                         <th class="row" scope = "row">Размер</th>
                         <td>36 - 40</td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <th class="row" scope = "row">Категория</th>
                         <td>Верхняя одежда</td>
-                    </tr>
+                    </tr> -->
                     <tr>
                         <th class="row" scope = "row">Описание</th>
                         <td>Я пишу до сих пор только о князьях, графах, министрах, сенаторах и их детях и боюсь, что и вперед не будет других лиц в моей истории.
@@ -90,7 +87,11 @@
 
     </div>
 
-
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+    </div>
+  
 
 </div>
 <script src="./js/slider.js"></script>
@@ -100,15 +101,43 @@
 
         const id = +url.searchParams.get('id');
         const collection = url.searchParams.get('collection')
-        console.log(+url.searchParams.get('id'));
-
+        
         const result = await fetch(`./js/${collection}.json`);
         const products = await result.json();
-        console.log(products);
+        
         const product = products.find(p => p.id === id); 
-        console.log(product);
+        
+        document.querySelector('#product-container > div.txt > p.name').textContent = product.title;
+        document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(1) > td').textContent = product.article;
+        document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(2) > td').textContent = product.color;
+        document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(3) > td').textContent = product.consist;
+        document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(4) > td').textContent = product.size;
+        document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(5) > td').textContent = product.title;
+       
+        const previewSlider = document.querySelector('#slider')
+        previewSlider.innerHTML = product.images.map((i, index) => `<img src="${i}" alt="" class="image-preview minimized ${!index ? '' : 'hidden'}" data-index="${index}" data-active="">`).join(' ');
+        // Get the modal
+        const modal = document.getElementById("myModal");
 
-        document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(6) > td').textContent = product.title;
+        const modalSlider = document.querySelector('#myModal');
+        modalSlider.innerHTML += product.images.map(i => `<img src="${i}" alt="" class="modal-content">`).join(' ');
+        
+        document.querySelectorAll('#slider img').forEach(img => {
+            img.addEventListener('click', () => {
+               // const img = document.querySelector(`#slider img[data-index="${img.attributes['data-index'].value}"]`);
+                console.log(img);
+                modal.style.display = "block";
+            });
+
+            
+        })
+        // Get the <span> element that closes the modal
+        const span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.addEventListener('click', () => { 
+            modal.style.display = "none";
+        })
     }
 </script>
 </body>
