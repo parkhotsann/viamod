@@ -3,8 +3,8 @@
   {
     "id": 1,
     "title": "Модель 422",
-    "imgSrc": "css/img/spring1.jpg",
-    "images": ["css/img/spring3.jpg","css/img/spring2.jpg","css/img/spring1.jpg"],
+    "imgSrc": "css/img/spring/422 48 50 52 2.jpg",
+    "images": ["css/img/spring/422 48 50 52 2.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -15,7 +15,8 @@
   {
     "id": 2,
     "title": "Модель 522",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/522 48 50 52 волн 9.jpg",
+    "images": ["css/img/spring/522 48 50 52 волн 9.jpg"],
     "article": "",
     "color": "Волна",
     "consist": "",
@@ -25,7 +26,8 @@
   {
     "id": 3,
     "title": "Модель 522",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/522 48-52 сирень 3.jpg",
+    "images": ["css/img/spring/522 48-52 сирень 3.jpg"],
     "article": "",
     "color": "Сирень",
     "consist": "",
@@ -35,7 +37,8 @@
   {
     "id": 4,
     "title": "Модель 519",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/519 синий 52 54 56 4.jpg",
+    "images": ["css/img/spring/519 синий 52 54 56 4.jpg", "css/img/spring/519 синий 52 54 56 8.jpg"],
     "article": "",
     "color": "Синий",
     "consist": "",
@@ -46,7 +49,8 @@
   {
     "id": 5,
     "title": "Модель 521",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/521 48 50 52 2.jpg",
+    "images": ["css/img/spring/521 48 50 52 2.jpg", "css/img/spring/521 черн 48 -52 6.jpg"],
     "article": "",
     "color": "Черный",
     "consist": "",
@@ -57,7 +61,8 @@
   {
     "id": 6,
     "title": "Модель 523",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/523 48 50 52 3.jpg",
+    "images": ["css/img/spring/523 48 50 52 3.jpg", "css/img/spring/523 48 50 52 7.jpg","css/img/spring/523 48 50 52 10.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -68,7 +73,8 @@
   {
     "id": 7,
     "title": "Модель 525",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/525 54 56 58 2.jpg",
+    "images": ["css/img/spring/525 54 56 58 2.jpg", "css/img/spring/525 54 56 58 5.jpg", "css/img/spring/525 54 56 58 9.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -79,7 +85,8 @@
   {
     "id": 8,
     "title": "Модель 529",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/529 50 52 54 3.jpg",
+    "images": ["css/img/spring/529 50 52 54 3.jpg", "css/img/spring/529 50 52 54 7.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -90,7 +97,8 @@
   {
     "id": 9,
     "title": "Модель 530",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/530 52 54 56 .jpg",
+    "images": ["css/img/spring/530 52 54 56 .jpg", "css/img/spring/530 52 54 56 3.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -101,7 +109,8 @@
   {
     "id": 10,
     "title": "Модель 531",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/531 52 54 56 5.jpg",
+    "images": ["css/img/spring/531 52 54 56 5.jpg", "css/img/spring/531 52 54 56 11.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -112,7 +121,8 @@
   {
     "id": 11,
     "title": "Модель 532",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/532 50 52 54 9.jpg",
+    "images": ["css/img/spring/532 50 52 54 9.jpg", "css/img/spring/532 50 52 54 10 .jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -123,7 +133,8 @@
   {
     "id": 12,
     "title": "Модель 533",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/533 50 52 54 1.jpg",
+    "images": ["css/img/spring/533 50 52 54 1.jpg", "css/img/spring/533 50 52 54 4.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -134,7 +145,8 @@
   {
     "id": 13,
     "title": "Модель 534",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/534 50 52 54 3.jpg",
+    "images": ["css/img/spring/534 50 52 54 3.jpg", "css/img/spring/534 50 52 54 4.jpg", "css/img/spring/534 50 52 54 6.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -145,7 +157,8 @@
   {
     "id": 14,
     "title": "Модель 535",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/535 48 50 52 .jpg",
+    "images": ["css/img/spring/535 48 50 52 .jpg", "css/img/spring/535 48 50 52 5.jpg", "css/img/spring/535 48 50 52 8.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -156,7 +169,8 @@
   {
     "id": 15,
     "title": "Модель 537",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/537 50 52 54 7.jpg",
+    "images": ["css/img/spring/537 50 52 54 7.jpg", "css/img/spring/537 50 52 54 32.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -167,7 +181,8 @@
   {
     "id": 16,
     "title": "Модель 538",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/538 50 52 54 4.jpg",
+    "images": ["css/img/spring/538 50 52 54 4.jpg", "css/img/spring/538 50 52 54 5.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -178,7 +193,8 @@
   {
     "id": 17,
     "title": "Модель 539",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/539 50 52 54 1.jpg",
+    "images": ["css/img/spring/539 50 52 54 1.jpg","css/img/spring/539 50 52 54 5.jpg","css/img/spring/539 50 52 54 7.jpg", "css/img/spring/539 50 52 54 8.jpg"],
     "article": "",
     "color": "",
     "consist": "",
@@ -189,7 +205,8 @@
   {
     "id": 18,
     "title": "Модель 540",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/540 48-58 синий 4.jpg",
+    "images": ["css/img/spring/540 48-58 синий 4.jpg", "css/img/spring/540 48-58синий 4.jpg"],
     "article": "",
     "color": "Синий",
     "consist": "",
@@ -200,7 +217,8 @@
   {
     "id": 19,
     "title": "Модель 540",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/540 48 -58 беж 3.jpg",
+    "images": ["css/img/spring/540 48 -58 беж 3.jpg","css/img/spring/540 48-58 беж 3.jpg","css/img/spring/540 48-58 беж 6.jpg"],
     "article": "",
     "color": "Бежевый",
     "consist": "",
@@ -210,7 +228,8 @@
   {
     "id": 20,
     "title": "Модель 540",
-    "imgSrc": "css/img/spring2.jpg",
+    "imgSrc": "css/img/spring/540 54 56 58 .jpg",
+    "images": ["css/img/spring/540 54 56 58 .jpg", "css/img/spring/540 54 56 58 4.jpg"],
     "article": "",
     "color": "",
     "consist": "",
