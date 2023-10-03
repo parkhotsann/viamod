@@ -23,7 +23,7 @@
         <div class="dropdown">
             <a href="#" class="nav_link" >Коллекция</a>
             <div class="dropdown-content">
-                <!-- <a href="winter.html">Осень-Зима 2022-2023</a> -->
+                <a href="winter.html">Осень-Зима 2022-2023</a>
                 <a href="spring.html">Весна-Лето 2023</a>
             </div>
         </div>
@@ -48,27 +48,24 @@
 
 
             <div class="txt">
-                <p class="name">Бежевый плащ</p>
+                <p class="name">Наименование</p>
                 <!-- <a class="year" href="winter.html">Осень-зима 2022-2023</a> -->
-                <p class="price">Стоимость: 250 бел.руб.</p>
-
-                <h2>О товаре</h2>
                 <table class="tbl">
                     <tr>
                         <th class="row" scope = "row">Артикул</th>
-                        <td>2569841</td>
+                        <td>Артикул</td>
                     </tr>
                     <tr>
                         <th class="row" scope = "row">Цвет</th>
-                        <td>Бежевый, черный</td>
+                        <td>Цвет</td>
                     </tr>
                     <tr>
                         <th class="row" scope = "row">Состав ткани</th>
-                        <td>Лен</td>
+                        <td>Состав</td>
                     </tr>
                     <tr>
                         <th class="row" scope = "row">Размер</th>
-                        <td>36 - 40</td>
+                        <td>Размеры</td>
                     </tr>
                     <!-- <tr>
                         <th class="row" scope = "row">Категория</th>
@@ -76,9 +73,7 @@
                     </tr> -->
                     <tr>
                         <th class="row" scope = "row">Описание</th>
-                        <td>Я пишу до сих пор только о князьях, графах, министрах, сенаторах и их детях и боюсь, что и вперед не будет других лиц в моей истории.
-                            Может быть, это нехорошо и не нравится публике; может быть, для нее интереснее и поучительнее история мужиков, купцов, семинаристов, но, со всем моим желанием иметь как можно больше читателей, я не могу угодить такому вкусу, по многим причинам.
-                            Во-первых, потому, что памятники истории того времени, о котором я пишу, остались только в переписке и записках людей высшего круга грамотных; даже интересные и умные рассказы, которые мне удалось слышать, слышал я только от людей того же круга.</td>
+                        <td>Описание</td>
                     </tr>
                 </table>
             </div>
@@ -112,7 +107,7 @@
         document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(2) > td').textContent = product.color;
         document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(3) > td').textContent = product.consist;
         document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(4) > td').textContent = product.size;
-        document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(5) > td').textContent = product.title;
+        document.querySelector('#product-container > div.txt > table > tbody > tr:nth-child(5) > td').textContent = product.description;
        
         const previewSlider = document.querySelector('#slider')
         previewSlider.innerHTML = product.images.map((i, index) => `<img src="${i}" alt="" class="image-preview minimized ${!index ? '' : 'hidden'}" data-index="${index}" data-active="">`).join(' ');
